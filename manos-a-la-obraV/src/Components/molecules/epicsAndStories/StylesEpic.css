@@ -1,0 +1,107 @@
+/* Estilos generales de la página */
+.epica-container {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color:  rgb(201, 166, 221);
+  padding: 10px; /* Reducir el padding para hacer el contenedor más pequeño */
+  width: 700px; /* Definir un ancho máximo para hacer el contenedor más pequeño */
+  margin: 10px auto; /* Centrar el contenedor horizontalmente */
+  margin-top: 150px;
+  
+}
+
+/* Título de la épica */
+.epica-title {
+  font-size: 2.5rem;
+  color: #360026;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Descripción de la épica */
+.epica-description {
+  font-size: 1.2rem;
+  color: rgb(23, 1, 43);
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Subtítulo para la lista de historias */
+.epics-subtitle {
+  font-size: 2rem;
+  color:#360026;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.agregarHistoria{
+  background-color: #934caf; /* Green */
+  color: rgb(233, 148, 229);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 0 auto;
+  margin-top: 10px;
+}
+.agregarHistoria:hover{
+  background-color: #edbfe5;
+    color: #934caf;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+/* Lista de historias */
+.epics-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+/* Cada historia individual */
+.epic-story-item {
+  background-color:  rgb(170, 125, 196);
+  padding: 15px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+  
+}
+
+/* Estilos del enlace de la historia */
+.epic-story-link {
+  font-size: 1.5rem;
+  text-decoration: none;
+  display: block;
+  text-align: center;
+   /* Cambia "blue" por el color que desees */
+  font-weight: 600;
+}
+
+
+
+.epic-story-link:hover {
+  color: red; /* Cambiar el color del enlace al pasar el cursor */
+}
+
+/* Efecto hover en cada historia */
+.epic-story-item:hover {
+
+  background-color: #edbfe5;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+}
+.story-name{
+  color: #360026;
+}
+.story-name:hover{
+  color:  #9a1bcc;
+}
+.story-description{
+color: rgb(37, 2, 70) !important;
+}

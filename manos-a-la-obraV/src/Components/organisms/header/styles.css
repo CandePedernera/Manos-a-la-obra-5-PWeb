@@ -1,0 +1,51 @@
+/* Estilo del Header */
+.header {
+  display: flex;
+  align-items: center; /* Alinea verticalmente los elementos */
+  padding: 20px;
+  background-color: #d7bde2; /* Fondo blanco sólo en el header */
+  box-shadow: 0px 4px 10px rgba(247, 5, 5, 0.1); /* Sombra sutil */
+  border-radius: 8px;
+  position: fixed; /* Fija el header en la parte superior de la pantalla */
+  top: 0; /* Posiciona el header en la parte superior */
+  width: 100%; /* Ocupa todo el ancho de la pantalla */
+  z-index: 1000; /* Asegura que el header esté por encima del contenido */
+  margin-bottom: 20px;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer; 
+}
+
+/* Ajuste del body para evitar que el contenido quede detrás del Header */
+body {
+  padding-top: 80px; /* Espacio para el header fijo */
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer; 
+}
+
+/* Alineación del menú hamburguesa a la izquierda */
+.hamburger-menu {
+  position: absolute; /* Posicionamiento absoluto para alinear a la izquierda */
+  left: 20px; /* Espacio desde la izquierda */
+}
+
+/* Estilos para el título del Header */
+.header h1, .header h2, .header h3 {
+  font-size: 3.5rem;
+  color: #4a235a; /* Color oscuro del texto */
+  margin: 0;
+  text-align: center; /* Centrar el texto */
+  flex-grow: 0.95; /* Permite que el título ocupe el espacio disponible */
+  font-weight: 600;
+}
+
+/* Responsivo para pantallas pequeñas */
+@media (max-width: 768px) {
+  .header {
+    padding: 15px;
+    flex-direction: column;
+    align-items: flex-start; /* Alinear elementos al inicio en pantallas pequeñas */
+  }
+
+  .header h1, .header h2, .header h3 {
+    font-size: 1.5rem; /* Ajustar tamaño del texto */
+  }
+}

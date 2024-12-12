@@ -1,0 +1,181 @@
+/* Contenedor principal que envuelve todos los componentes */
+.project-details-wrapper {
+
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(201, 166, 221);
+  padding: 10px; /* Reducir el padding para hacer el contenedor más pequeño */
+  width: 700px; /* Definir un ancho máximo para hacer el contenedor más pequeño */
+  margin: 10px auto; /* Centrar el contenedor horizontalmente */
+  margin-top: 150px;
+}
+
+/* Lista de epics */
+.epics-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Cada epic individual */
+.epic-item {
+  background-color: rgb(170, 125, 196);
+  
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 600px;
+  width: 100%;
+  
+}
+
+/* Efecto hover para cada epic */
+.epic-item:hover {
+  
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+  background-color: #edbfe5;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer; 
+}
+
+/* Estilo del enlace */
+.epic-link {
+  text-decoration: none;
+  color: #4a235a;
+  display: block;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer; 
+  text-align: center;
+  font-size: 1.5rem;
+  transition: color 0.3s ease; /* Transición suave para el cambio de color */
+}
+
+.epic-link:hover {
+  color: #9a1bcc; /* Cambiar el color del enlace al pasar el cursor */
+
+}
+
+/* Título del proyecto */
+.project-name {
+  font-size: 2.5rem;
+  color: #333333;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+/* Descripción del proyecto */
+.project-description {
+  font-size: 1.2rem;
+  color: #666;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Título de la sección de Epics */
+.epics-title {
+  font-size: 2rem;
+  color: #4a235a;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Mensaje si no hay Epics */
+.no-epics-container {
+  text-align: center;
+  padding: 40px;
+}
+
+.no-epics-message {
+  font-size: 1.5rem;
+  color: #4a235a;
+  font-weight: 500;
+}
+.edit-epic-input,
+.edit-epic-textarea {
+  width: 95%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #e4a4de;
+  font-size: 1rem;
+  background-color: #edbfe5;
+}
+
+.edit-epic-input:hover{
+  background-color: #b57bb3;
+}
+
+.edit-epic-textarea:hover{
+  background-color: #b57bb3;
+}
+
+.edit-epic-buttons {
+  display: flex;
+  justify-content: flex-end; /* Alinea los botones a la derecha */
+}
+.submit-epic-button,
+.cancel-epic-button {
+  background-color: #eca6d7; /* Lila */
+  color: rgb(33, 2, 48); /* Texto oscuro */
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-left: 10px; /* Espaciado entre botones */
+}
+.submit-epic-button:hover {
+  background-color: #b57bb3; 
+}
+.cancel-epic-button:hover {
+  background-color:  #b57bb3; 
+}
+
+/* Botón para eliminar épica */
+.delete-epic-button {
+  background-color:  #eca6d7; /* Rojo claro */
+  color:#3a2c65; /* Texto rojo oscuro */
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px; /* Espaciado entre botones */
+}
+
+.delete-epic-button:hover {
+  background-color:rgb(156, 112, 182); /* Rojo intenso */
+  color:#3a2c65; /* Texto blanco */
+}
+
+/* Botón para editar épica */
+.edit-epic-button {
+  background-color:  #eca6d7; /* Lila claro */
+  color: #3a2c65; /* Texto oscuro */
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.edit-epic-button:hover {
+  background-color:rgb(170, 125, 196); /* Lila más oscuro */
+  color:#3a2c65; /* Texto blanco */
+}
+
+/* Botones en conjunto: alineación */
+.epic-item button {
+  margin-left: 5px; /* Espacio entre botones dentro de la lista */
+}
+
+/* Opcional: Transición sutil */
+button {
+  transition: all 0.3s ease;
+}

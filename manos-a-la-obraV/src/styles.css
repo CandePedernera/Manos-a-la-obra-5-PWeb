@@ -1,0 +1,18 @@
+/* Asegura que html y body cubran toda la ventana */
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+   
+    font-family: 'Arial', sans-serif; /* Asegúrate de que la fuente sea consistente */
+    background-image: url('src/Components/atoms/imgenes/fondo-holograma-realista_52683-88890.avif');
+    background-size: cover;
+  }
+  
+  /* Asegura que el div con id="root" cubra toda la pantalla */
+  #root {
+    min-height: 100vh; /* Ocupa al menos toda la ventana */
+    display: flex;
+    flex-direction: column;
+    background-color: inherit; /* Hereda el color de fondo */
+  }

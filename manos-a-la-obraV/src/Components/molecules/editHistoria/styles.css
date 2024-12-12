@@ -1,0 +1,41 @@
+.input1 {
+    background-color:  #edbfe5;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 90%;
+
+}
+
+.contenedor {
+    background-color:rgb(170, 125, 196);
+    border-radius: 10px;
+}
+
+.boton {
+    background-color: #934caf; /* Green */
+  color: rgb(233, 148, 229);
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  margin-left: 20px;
+  margin-bottom: 20px;
+  
+}
+.boton:hover{
+    background-color: #edbfe5;
+    color: #934caf;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+.label1{
+    text-align: center;
+    margin-top: 15px;
+
+}

@@ -1,0 +1,49 @@
+
+
+    .agregarHistoria{
+        background-color: #934caf; /* Green */
+        color: rgb(233, 148, 229);
+        padding: 10px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-bottom: 50% auto;
+        margin-top: 10px;
+      }
+
+
+#deleteButon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+
+    border: none;
+    outline: none;
+}
+
+
+#floatingDiv {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2a2a2b;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: white 1px solid;
+    border-radius: 16px;
+}
+
+#butonCont {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+}

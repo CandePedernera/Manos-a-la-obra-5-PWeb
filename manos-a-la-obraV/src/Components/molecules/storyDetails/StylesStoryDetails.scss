@@ -1,0 +1,120 @@
+/* Contenedor de la página de la historia */
+.story-page-container {
+    padding: 20px;
+    width: 700px;
+    margin: 0 auto; /* Centrar el contenedor en la página */
+    background-color: rgb(232, 201, 235);
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 150px;
+  }
+  
+  /* Contenedor interno de la historia */
+  .story-container {
+    padding: 20px;
+    background-color: rgb(232, 201, 235);
+    
+  }
+  
+  /* Título de la historia */
+  .story-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #4a235a !important;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Descripción de la historia */
+  .story-description {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  .botones{
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #edbfe5;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block; /* Asegura que los botones estén en línea */
+  }
+  .botones:hover{
+    background-color: #2e024b; /* Un tono violeta más oscuro */
+  transform: scale(1.05);
+  color: #eca6d7;
+  }
+  /* Subtítulo de las tareas */
+  .story-subtitle {
+    font-size: 2rem;
+    color: #4f0458;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  /* Lista de tareas */
+  .task-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  /* Cada tarea individual */
+  .task-item {
+    margin-bottom: 10px;
+    padding: 10px;
+    background-color: rgb(205, 138, 211);
+    border-radius: 8px;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  /* Nombre de la tarea */
+  .task-name {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #4a235a;
+  }
+  
+  /* Descripción de la tarea */
+  .task-description {
+    font-size: 1rem;
+    color: #2b0725;
+  }
+
+ 
+  
+  /* Efecto hover para cada tarea */
+  .task-item:hover {
+    
+    box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.15);
+    background-color:#edbfe5;
+  }
+  
+  .task-item:hover .task-name {
+    color: #744985;
+  }
+
+  .agregartarea{
+    background-color: #c982f3;
+    color: rgb(90, 9, 72);
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16,pointer;
+    display: block;
+    margin: 60px auto;
+    transition: background-color 0.3s ease;
+  }
+  .agregartarea:hover{
+    background-color:#e2709f;
+  }

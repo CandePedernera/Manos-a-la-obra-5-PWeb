@@ -1,0 +1,72 @@
+.contenedorForm {
+    
+    background-color:  rgb(208, 169, 211);
+    border-radius: 8px;
+    text-align: center;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: #4a235a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  form div {
+    margin-bottom: 10px;
+  }
+
+  label {
+    font-size: 1rem;
+    color: #4a235a;;
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+  }
+  .inputform {
+    width: 80%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #a53ea5;
+    border-radius: 5px;
+    box-sizing: border-box;
+    background-color: #f8cef8;
+  }
+
+  .inputform:focus {
+    border-color: #8a7828;
+    outline: none;
+    box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+  }
+  .agregarBoton {
+    background-color: #330050;
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+    display: block;
+    margin: 60px auto;
+    transition: background-color 0.3s ease;
+  }
+  .agregarBoton:hover {
+    background-color:#f80067;
+  }
+
+  /* Diseño responsivo */
+@media (max-width: 600px) {
+    div {
+      padding: 15px;
+    }
+  
+    .inputform {
+      font-size: 0.9rem;
+    }
+  
+    .agregarBoton {
+      font-size: 0.9rem;
+      padding: 8px 15px;
+    }
+  }

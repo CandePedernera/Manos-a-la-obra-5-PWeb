@@ -1,0 +1,102 @@
+/* Contenedor del Sidebar */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 250px;
+  background-color:#ebdef0;
+
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer; 
+  box-shadow: var(--shadow-elevation-medium); /* Sombras suaves */
+  transition: transform 0.3s ease;
+  transform: translateX(-100%); /* Oculto por defecto */
+  z-index: 99;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espaciado entre elementos */
+ /* Bordes redondeados en la esquina derecha */
+  
+}
+
+.sidebar.open {
+  transform: translateX(0); /* Muestra el sidebar */
+}
+
+/* Navegación dentro del sidebar */
+.nav-links ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 30px; /* Espaciado entre los elementos de la lista */
+}
+
+.nav-links ul li {
+  border: transparent; /* Bordes negros para cada botón */
+  background-color: #d1829a;
+  border-radius: 20px; /* Bordes redondeados para cada botón */
+  padding: 10px 20px; /* Espaciado interno para un área de clic más grande */
+  text-align: center; /* Centra el texto dentro del contenedor */
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  color: #810a54; /* Texto oscuro para mejor contraste */
+  font-size: 1.2rem; /* Tamaño de fuente aumentado */
+  font-weight: 600;
+  display: block; /* Hace que el área de clic abarque todo el contenedor */
+}
+
+.nav-links ul li a:hover {
+  color: #26022b; /* Resalta el link con un color de acento */
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+/* Sección del perfil de usuario */
+.user-profile {
+  margin-top: auto; /* Mueve la sección del perfil hacia abajo */
+  padding-top: 20px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+.user-profile a {
+  text-decoration: none;
+  color: #afb91e;
+  font-size: 1rem;
+  transition: color 0.3s ease;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+.user-profile a:hover {
+  color: #0b8600; /* Color de hover */
+}
+
+.user-profile p {
+  margin-top: 10px;
+  color: #607274; /* Color más suave para el texto */
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+/* Ajustes de diseño responsivo */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 200px; /* Ajuste de ancho en pantallas pequeñas */
+  }
+
+  .nav-links ul li a {
+    font-size: 1rem; /* Ajuste de tamaño de fuente en pantallas pequeñas */
+  }
+}
+
+.button-container {
+  display: flex; /* Usa flexbox para alinear los botones */
+  justify-content: space-between; /* Espacio entre los botones */
+  margin-bottom: 20px; /* Espacio debajo del contenedor de botones */
+}
+

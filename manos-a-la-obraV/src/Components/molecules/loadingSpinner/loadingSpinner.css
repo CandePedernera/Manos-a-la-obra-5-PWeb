@@ -1,0 +1,32 @@
+.custom-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* O cualquier altura acorde al diseño */
+  
+}
+
+.custom-spinner {
+  border: 4px solid #f5b3e0; /* Tono rosa claro para el fondo del spinner */
+  border-top: 4px solid #800080; /* Tono violeta oscuro para la parte superior */
+  border-radius: 100%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+.custom-loading-message {
+  margin-top: 10px;
+  color: #800080; /* Tono violeta oscuro */
+  font-size: 18px;
+  font-weight: 500;
+  font-family: 'Roboto', sans-serif; /* Manteniendo la misma tipografía */
+  text-align: center;
+}
+
+/* Animación de rotación */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

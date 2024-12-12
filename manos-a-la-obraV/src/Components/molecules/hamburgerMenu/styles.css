@@ -1,0 +1,46 @@
+/* Estilos para el icono del menú hamburguesa */
+.hamburger-icon {
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 40px; /* Aumenta el tamaño del área clickeable */
+  height: 40px; /* Aumenta el tamaño del área clickeable */
+  margin: 10px; /* Espaciado alrededor del icono */
+  transition: transform 0.3s ease; /* Suave transición al abrir/cerrar */
+}
+.body{
+ background-image: url('src/Components/atoms/imgenes/fondo-holograma-realista_52683-88890.avif');
+}
+.line {
+  width: 30px; /* Ancho de las líneas */
+  height: 3px; /* Altura de las líneas */
+  background-color: #333; /* Color de las líneas */
+  margin: 3px 0; /* Espaciado entre las líneas */
+  transition: all 0.3s ease; /* Transición suave */
+}
+
+/* Cambios en las líneas al abrir el menú */
+.line1.open {
+  transform: rotate(45deg) translate(5px, 5px); /* Rotación para formar una 'X' */
+}
+
+.line2.open {
+  opacity: 0; /* Ocultar la línea del medio */
+}
+
+.line3.open {
+  transform: rotate(-45deg) translate(5px, -5px); /* Rotación para formar una 'X' */
+}
+
+/* Ajustes responsivos */
+@media (max-width: 768px) {
+  .hamburger-icon {
+    margin: 5px; /* Menor margen en pantallas pequeñas */
+  }
+
+  .line {
+    width: 25px; /* Disminuir el ancho en pantallas pequeñas */
+  }
+}

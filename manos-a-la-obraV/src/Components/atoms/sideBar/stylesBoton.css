@@ -1,0 +1,35 @@
+.button {
+    background-color: transparent; 
+    border: transparent; /* Borde negro */
+    border-radius: 90%; /* Hacer el botón circular */
+    padding: 20px;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer; 
+    transition: all 0.3s ease;
+    box-shadow: var(--shadow-elevation-low); /* Sombras suaves */
+    display: flex;
+    align-items: center; /* Centrar verticalmente el contenido */
+    justify-content: center; /* Centrar horizontalmente el contenido */
+}
+
+.button img{
+    width: 40px; /* Tamaño de la imagen */
+    height: 40px;
+}
+.button:hover {
+    box-shadow: var(--shadow-elevation-low); /* Aumentar la sombra al pasar el cursor */
+    background-color: #edbfe5; /* Agregar color de fondo suave al hacer hover */
+}
+
+.button:active {
+    transform: scale(0.95); /* Hacer una pequeña escala cuando se hace clic */
+}
+
+.fa-arrow-left {
+    font-size: 20px; /* Ajustar el tamaño del icono */
+    color: black; /* Color del icono */
+}
+
+.fa-times{
+    font-size: 20px; /* Ajustar el tamaño del icono */
+    color: black; /* Color del icono */
+}

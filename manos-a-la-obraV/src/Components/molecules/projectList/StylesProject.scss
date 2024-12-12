@@ -1,0 +1,230 @@
+/* Lista de proyectos */
+.projects-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 150px;
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer;
+}
+
+/* Cada proyecto individual */
+.project-item {
+  
+  margin-bottom: 20px;
+  border-radius: 8px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: rgb(170, 125, 196);
+  padding: 1px; /* Reducir el padding para hacer el contenedor más pequeño */
+  max-width: 500px; /* Definir un ancho máximo para hacer el contenedor más pequeño */
+  margin: 20px auto; /* Centrar el contenedor horizontalmente */
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+/* Efecto hover para cada proyecto */
+.project-item:hover{
+  background-color:#edbfe5;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+/* Estilo del enlace */
+.project-link {
+  text-decoration: none;
+  color: inherit;
+  
+  display: block;
+}
+
+$primary-color: #d31111;
+/* Título del proyecto */
+.project-name {
+  font-size: 1rem; /* Aumentar el tamaño de la fuente */
+  font-weight: 10;
+  margin-bottom: 10px;
+    color:#4a235a !important;
+
+  text-align: center; /* Centrar el título */
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+/* Descripción del proyecto */
+.project-description {
+  font-size: 1.2rem; /* Aumentar el tamaño de la fuente de la descripción */
+  color: #1f0116 !important;
+  margin: 0;
+  text-align: center; /* Centrar la descripción */
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+/* Efecto hover para el título del proyecto */
+.project-link:hover .project-name {
+  color: rgb(209, 133, 224) !important;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+
+}
+.projects-list{
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer;
+
+}
+.projects-list:hover{
+
+}
+
+.projects-wrapper{
+  cursor: url('src/Components/atoms/imgenes/cursortamaño.png') 16 16, pointer;
+}
+.message-banner {
+  background-color: #4CAF50; /* Verde para éxito */
+  color: white;
+  padding: 10px;
+  margin-top: 10px;
+  text-align: center;
+  border-radius: 5px;
+  font-size: 16px;
+  animation: slideIn 0.5s ease-out;
+}
+
+.message-banner.error {
+  background-color: #f44336; /* Rojo para errores */
+}
+.success-message {
+  background-color: #4CAF50; /* Color de fondo verde */
+  color: white; /* Color de texto blanco */
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+}
+/* Estilos para los botones de eliminar y editar */
+.delete-project-button,
+.edit-project-button {
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  margin-right: 10px;
+  margin-top: 10px;
+  display: inline-block; /* Asegura que los botones estén en línea */
+  
+}
+.add-project-button {
+  background-color: #eca6d7; /* Lila */
+  color: rgb(33, 2, 48);
+  font-size: 1rem;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 5px;
+  margin: 10px auto; /* Esto centra el botón horizontalmente */
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  display: block; /* Convierte el botón en un bloque para que funcione el auto-margen */
+}
+
+.add-project-button:hover{
+  background-color: #2e024b; /* Un tono violeta más oscuro */
+  transform: scale(1.05);
+  color: #eca6d7;
+}
+/* Estilo para el botón de eliminar (en tonos violetas) */
+.delete-project-button {
+  background-color: #eca6d7; /* Violeta oscuro */
+  color: rgb(33, 2, 48);
+}
+
+/* Estilo para el botón de editar (en tonos lilas) */
+.edit-project-button {
+  background-color: #eca6d7; /* Lila */
+  color: rgb(33, 2, 48);
+}
+
+/* Efecto hover para los botones de eliminar y editar */
+.delete-project-button:hover,
+.edit-project-button:hover {
+  background-color: #2e024b; /* Un tono violeta más oscuro */
+  transform: scale(1.05);
+  color: #eca6d7;
+}
+
+////////////////
+
+/* Estilo para el formulario de agregar proyecto */
+.add-project-form,
+.edit-project-form {
+  background-color: rgb(170, 125, 196);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 20px auto; /* Aplica margen automático a izquierda y derecha */
+  width: 70%; /* Ancho del formulario */
+  max-width: 600px
+}
+
+/* Estilo de los inputs y textarea dentro del formulario */
+.add-project-form input,
+.add-project-form textarea,
+.edit-project-form input,
+.edit-project-form textarea {
+  width: 97%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #8b1483;
+  border-radius: 5px;
+  background-color: #edbfe5;
+  font-size: 1rem;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+}
+
+/* Estilo para el botón de submit dentro del formulario */
+.add-project-form button,
+.edit-project-form button {
+  background-color: #eca6d7;
+  color: rgb(33, 2, 48);
+  font-size: 1rem;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+/* Efecto de hover para el botón de submit */
+.add-project-form button:hover,
+.edit-project-form button:hover {
+  
+  background-color: #2e024b; /* Un tono violeta más oscuro */
+  transform: scale(1.05);
+  color: #eca6d7;
+}
+
+/* Estilos para el mensaje de éxito */
+.success-message {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px;
+  margin-top: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 16px;
+  width: 100%;
+  position: relative;
+}
+/// //////////////
+
+
+
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

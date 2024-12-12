@@ -1,0 +1,49 @@
+.boton{
+    font-size: 1rem;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    background-color: #cdedbf;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+    margin-right: 10px;
+    margin-top: 10px;
+    display: inline-block; /* Asegura que los botones estén en línea */
+}
+
+#deleteButon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    width: 2.5rem;
+    height: 2.5rem;
+    background: none;
+    border: none;
+    outline: none;
+}
+
+
+#floatingDiv{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #2a2a2b;
+    display: flex;
+    flex-direction: column;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    border: white 1px solid;
+    border-radius: 16px;
+}
+
+#butonCont{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    font-size: 1.5rem;
+}

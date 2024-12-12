@@ -1,0 +1,20 @@
+/* Definimos la clase .title */
+.title {
+  font-size: 2rem; /* Tamaño de fuente ajustable */
+  color: red; /* Color del texto */
+  opacity: 0; /* Empieza invisible */
+  transform: translateY(20px); /* Desplazamiento inicial hacia abajo */
+  animation: fadeInUp 1s ease forwards; /* Animación personalizada */
+}
+
+/* Animación para que el título aparezca */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px); /* Desplazamiento inicial */
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0); /* Posición final */
+  }
+}

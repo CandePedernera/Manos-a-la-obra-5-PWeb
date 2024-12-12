@@ -1,0 +1,83 @@
+/* Login.css */
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--background-color);
+  }
+  
+  .login-box {
+    background-color: rgb(201, 166, 221);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    font-size: 38px;
+    color: #4a235a;
+    margin-bottom: 20px;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  .login-description {
+    font-size: 16px;
+    color: #43036d;
+    margin-bottom: 30px;
+  }
+  
+  .login-inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  
+  .login-input {
+    padding: 10px;
+    border: 2px solid var(--primary-color);
+    border-radius: 5px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    background-color: #edbfe5;
+  }
+  
+  .login-button {
+    background-color:  #a1739a;
+    color: rgb(0, 0, 0);
+    padding: 12px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: url('src/Components/atoms/imgenes/seleccionvioleta.png') 16 16, pointer;
+    font-family: 'Roboto', sans-serif;
+    transition: background-color 0.3s, transform 0.2s ease;
+  
+  }
+  
+  .login-button:hover {
+    background-color: #edbfe5;
+    
+  }
+  
+  .login-button:focus,
+  .login-button:active {
+    outline: none;
+    transform: translateY(0);
+  }
+  
+  .login-message {
+    color: green;
+    font-size: 16px;
+    margin-top: 10px;
+  }
+  
+  .login-message.error {
+    color: rgb(60, 2, 78);
+  }
+  
